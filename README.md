@@ -16,3 +16,13 @@ That's it. Live within ~1 minute at https://conflictcoaching.brisebois.xyz
 
 Do not delete `CNAME` or `.nojekyll`: the first binds the domain, the second
 stops GitHub from mangling files that start with an underscore.
+
+## One-time setup still owed (Josh, Porkbun, ~1 min)
+
+Porkbun > brisebois.xyz > DNS > add record:
+  Type CNAME   Host `conflictcoaching`   Answer `itsbreeze.github.io`   TTL 600
+
+A few minutes later https://conflictcoaching.brisebois.xyz shows the placeholder. Then in
+GitHub (repo Settings > Pages) tick "Enforce HTTPS" once the certificate appears, or run:
+
+    gh api -X PUT repos/ItsBreeze/mom-conflictcoaching/pages -F https_enforced=true
