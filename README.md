@@ -14,6 +14,9 @@ DNS: CNAME `conflictcoaching` -> `itsbreeze.github.io` at Porkbun.
 
 That's it. Live within ~1 minute at https://conflictcoaching.brisebois.xyz
 
+The book companion app lives at `app/index.html` (URL /app/). Replace that file to update it;
+keep the link to `/app/` on the home page.
+
 Do not delete `CNAME` or `.nojekyll`: the first binds the domain, the second
 stops GitHub from mangling files that start with an underscore.
 
